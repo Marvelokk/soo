@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Okoro - Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="stylesw.css">
+ 
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="header-container">
+        <div class="profile-pic">
+          <img src="C:\Users\Marvelok.Design\Documents\Code project\Marvel Profile\marvelfinal\profile-pic.png" alt="Marvel Okoro">
+        </div>
+        <div class="header-content">
+          <h1>Marvel Okoro</h1>
+          <h2>Frontend Developer</h2>
+          <ul class="social-icons">
+            <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about-section">
+        <h3>About Me</h3>
+        <div class="about-content">
+          <p>Hello! I'm Marvel Okoro, a frontend developer with a passion for creating delightful user experiences. I specialize in HTML, CSS, JavaScript, and popular frameworks like React and Vue.js. My goal is to build beautiful, responsive, and user-friendly websites that leave a positive impact on users.</p>
+        </div>
+      </section>
+      <section class="skills-section">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li><i class="fas fa-code"></i> HTML5</li>
+          <li><i class="fas fa-code"></i> CSS3</li>
+          <li><i class="fas fa-code"></i> JavaScript</li>
+          <li><i class="fas fa-react"></i> React</li>
+          <li><i class="fab fa-vuejs"></i> Vue.js</li>
+          <li><i class="fab fa-sass"></i> SASS</li>
+          <li><i class="fas fa-database"></i> MongoDB</li>
+          <li><i class="fab fa-node-js"></i> Node.js</li>
+          <li><i class="fas fa-database"></i> SQL</li>
+          <li><i class="fab fa-python"></i> Python</li>
+        </ul>
+      </section>
+      <section class="projects-section">
+        <h3>Projects</h3>
+        <div class="project">
+          <img src="C:\Users\Marvelok.Design\Documents\Code project\Marvel Profile\marvelfinal\project1.png" alt="Project 1">
+          <h4>EcoSmart App</h4>
+          <p class="project-description">
+            Discover EcoSmart App – an eco-friendly mobile app that promotes sustainable living. <span class="more-text"> Explore nearby eco-friendly stores on the map, and access valuable tips for adopting eco-friendly practices. Embrace a greener lifestyle with EcoSmart App!</span>
+            <button class="see-more-btn">See more</button>
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="C:\Users\Marvelok.Design\Documents\Code project\Marvel Profile\marvelfinal\project2 (1).png" alt="Project 1">
+          <h4>TravelXplorer</h4>
+          <p class="project-description">
+            Embark on thrilling adventures with TravelXplorer – your ultimate travel planning companion. <span class="more-text"> Discover captivating travel destinations through a stunning hero section. Search for dream locations and explore popular spots worldwide. Make unforgettable memories with TravelXplorer!</span>
+            <button class="see-more-btn">See more</button>
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="C:\Users\Marvelok.Design\Documents\Code project\Marvel Profile\marvelfinal\project3.png" alt="Project 1">
+          <h4>CryptoWave</h4>
+          <p class="project-description">
+            Surf the CryptoWave with this cutting-edge crypto trading app. <span class="more-text">Analyze real-time price charts in the sleek hero section. Discover top cryptocurrencies, latest news, and monitor portfolio performance with ease. Ride the wave of crypto innovation with CryptoWave!
+            </span>
+            <button class="see-more-btn">See more</button>
+          </p>
+        </div>
+          
+          <!-- Add more projects here -->
+        </div>
+      </section>
+      <section class="contact-section">
+        <h3>Contact</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i> Email: marvel.okoro@example.com</li>
+          <li><i class="fas fa-globe"></i> Portfolio: www.marvelokoro.dev</li>
+        </ul>
+        <a href="#" class="contact-btn">Get in Touch</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Marvel Okoro. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+ 
+  <script>
+    const seeMoreButtons = document.querySelectorAll('.see-more-btn');
+  
+    seeMoreButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const project = button.parentElement;
+        const moreText = project.querySelector('.more-text');
+  
+        if (project.classList.contains('expanded')) {
+          project.classList.remove('expanded');
+          button.textContent = 'See more';
+        } else {
+          project.classList.add('expanded');
+          button.textContent = 'See less';
+        }
+      });
+    });
+  </script>
+  
+  
+</body>
+</html>
